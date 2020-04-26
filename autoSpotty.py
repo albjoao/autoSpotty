@@ -1,4 +1,4 @@
-# shows a user's playlists (need to be authenticated via oauth)
+# Adds new songs from discover weekly to best weekly list
 
 import sys
 import spotipy
