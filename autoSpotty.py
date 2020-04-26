@@ -15,7 +15,7 @@ def getTrackUris(tracks):
 def getUserPlaylistID(username,name):
     playlists = sp.user_playlists(username)
     for playlist in playlists['items']:
-        if playlist['owner']['id'] == username and playlist['name'] = name:
+        if playlist['owner']['id'] == username and playlist['name'] == name:
             return playlist['id']
 
 
