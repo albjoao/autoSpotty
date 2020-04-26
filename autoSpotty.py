@@ -1,18 +1,14 @@
-# Adds new songs from discover weekly to best weekly list
+'''
+Author: Joao Alberto de Faria
+Takes in 'Discover Weekly' Playlist and Adds
+all new unique songs to 'Best Weekly' playlist
+'''
 
 import sys
 import spotipy
 import spotipy.util as util
 import json
 from tracks import Playlist, UserPlaylist
-
-def getUserPlaylistID(username,name):
-    '''Converts human readable name to spotify id'''
-    playlists = sp.user_playlists(username)
-    for playlist in playlists['items']:
-        if playlist['owner']['id'] == username and playlist['name'] == name:
-            return playlist['id']
-
 
 if __name__ == '__main__':
     username='thorriors'
